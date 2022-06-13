@@ -1,0 +1,42 @@
+﻿<div class="text-center">
+    <h1 class="display-4">Demo Page</h1>
+    @Html.CheckBox("show_all", true)
+    <table class="report">
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Department</th>
+            </tr>
+            <tr>
+                <td>
+                    @Html.TextBox("lastst_name_search")
+                </td>
+                <td>
+                    @Html.TextBox("first_name_search")
+                </td>
+                <td>
+                    @Html.TextBox("first_name_search")
+                </td>
+                <td>
+                    @Html.DropDownList("dept_search", new List<SelectListItem>(){ new SelectListItem { Text="dept1", Value="dept1", Selected= false}, new SelectListItem { Text="dept2", Value="dept2", Selected= false} })
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Last1</td>
+                <td>First1</td>
+                <td>email1@AppDomain.com</td>
+                <td>department1</td>
+            </tr>
+            <tr>
+                <td>Last2</td>
+                <td>First2</td>
+                <td>email2@AppDomain.com</td>
+                <td>department2</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

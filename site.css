@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.report {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.report thead {
+    position: sticky;
+    z-index: 1;
+}
+
+input {
+    max-width: 70px;
+    background-color: yellow;
+}
